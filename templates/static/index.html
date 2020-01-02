@@ -134,17 +134,18 @@
                     <img src="../public/images/cc.png" alt="iphone" class="img-fluid">
                 </div>
                 <div class="col-md-8 d-flex align-items-center">
+                    <form method="POST" action="/scoring">
                     <ul class="list-unstyled ui-steps">
                         <li class="media">
                             <div class="circle-icon mr-4">1</div>
                             <div class="media-body">
                                 <!-- <h5>Masukan Nomor Handphone</h5> -->
-                                <form>
+                                
                                     <div class="form-group">
                                         <label for="exampleFormControlInput1">Masukan Nomor Handphone</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="081222263853">
+                                        <input type="number" name="phone" class="form-control" id="exampleFormControlInput1" placeholder="Exp: 081222263853">
                                     </div>
-                                </form>
+                                
                                 </div>
                         </li>
                         <li class="media my-4">
@@ -152,12 +153,14 @@
                             <div class="media-body">
                                 <!-- <h5>Masukan Penghasilan Terbaru</h5> -->
                                 <div class="form-group">
-                                    <label for="exampleFormControlInput1">Masukan Nomor Handphone</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="2000000">
+                                    <label for="exampleFormControlInput1">Masukan Pemasukan Terbaru Anda</label>
+                                    <input type="number" name="income" class="form-control" id="exampleFormControlInput1" placeholder="Exp: 2000000">
+                                    <button type="submit" value="Add" style="margin-top: 50px;" class="btn btn-primary">Submit</button>
                                 </div>
-                                </div>
+                            </div>
                         </li>
                     </ul>
+                    </form>
                 </div>
                 
                 
